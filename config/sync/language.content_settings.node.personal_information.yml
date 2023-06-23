@@ -1,0 +1,11 @@
+uuid: c0695a15-b968-481a-9a2d-16ea2771c950
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.personal_information
+id: node.personal_information
+target_entity_type_id: node
+target_bundle: personal_information
+default_langcode: site_default
+language_alterable: false

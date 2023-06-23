@@ -1,0 +1,21 @@
+uuid: c1c929c6-838b-4194-9fae-0e2412bf3e10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gender
+    - node.type.personal_information
+  module:
+    - options
+id: node.personal_information.field_gender
+field_name: field_gender
+entity_type: node
+bundle: personal_information
+label: Gender
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

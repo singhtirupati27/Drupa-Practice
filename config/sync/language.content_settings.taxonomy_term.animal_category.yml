@@ -1,0 +1,11 @@
+uuid: 814a6f19-4399-4dca-b60a-40aed29fdbbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.animal_category
+id: taxonomy_term.animal_category
+target_entity_type_id: taxonomy_term
+target_bundle: animal_category
+default_langcode: site_default
+language_alterable: false

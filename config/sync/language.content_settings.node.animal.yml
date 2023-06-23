@@ -1,0 +1,11 @@
+uuid: 2d924179-d16b-489e-bb8a-cf229a8c4bc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.animal
+id: node.animal
+target_entity_type_id: node
+target_bundle: animal
+default_langcode: site_default
+language_alterable: false

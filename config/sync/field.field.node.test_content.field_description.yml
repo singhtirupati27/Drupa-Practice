@@ -1,0 +1,31 @@
+uuid: c7c85f0f-8932-4712-b4a4-516cc65af17b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.test_content
+    - paragraphs.paragraphs_type.long_text
+  module:
+    - entity_reference_revisions
+id: node.test_content.field_description
+field_name: field_description
+entity_type: node
+bundle: test_content
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      long_text: long_text
+    negate: 0
+    target_bundles_drag_drop:
+      long_text:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

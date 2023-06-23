@@ -1,0 +1,25 @@
+uuid: c23cf5ec-1dbb-4d0c-8d6e-f63c68b00d0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact_details.field_branch
+    - field.field.node.contact_details.field_stream
+    - node.type.contact_details
+  module:
+    - user
+id: node.contact_details.teaser
+targetEntityType: node
+bundle: contact_details
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_branch: true
+  field_stream: true
+  langcode: true

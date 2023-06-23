@@ -1,0 +1,38 @@
+uuid: 4989cdba-4f35-49b8-903f-0947c35fc38e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:my_custom_block_type:7471a76e-584e-46f7-9c02-f74223ddd20c'
+  module:
+    - block_content
+    - node
+    - system
+  theme:
+    - bootstrap5
+id: articleblock
+theme: bootstrap5
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:7471a76e-584e-46f7-9c02-f74223ddd20c'
+settings:
+  id: 'block_content:7471a76e-584e-46f7-9c02-f74223ddd20c'
+  label: 'Article Block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/article/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article

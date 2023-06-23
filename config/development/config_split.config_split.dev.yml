@@ -1,0 +1,23 @@
+uuid: d66d9012-fca0-4925-bbd0-1466fcc77104
+langcode: en
+status: true
+dependencies: {  }
+id: dev
+label: Dev
+description: ''
+weight: 0
+folder: ../config/development
+module:
+  admin_toolbar: 0
+  asset_injector: 0
+  config_split: 0
+  devel: 0
+  devel_generate: 0
+  devel_php: 0
+  gin_login: 0
+  gin_toolbar: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

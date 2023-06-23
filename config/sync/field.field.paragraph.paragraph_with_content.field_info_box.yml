@@ -1,0 +1,37 @@
+uuid: 15d45034-15f0-4395-beda-7ad2ea41183a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_info_box
+    - node.type.events
+    - node.type.page
+    - node.type.recipe
+    - node.type.user_groups
+    - node.type.vendor
+    - paragraphs.paragraphs_type.paragraph_with_content
+id: paragraph.paragraph_with_content.field_info_box
+field_name: field_info_box
+entity_type: paragraph
+bundle: paragraph_with_content
+label: 'Info box'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+      events: events
+      recipe: recipe
+      user_groups: user_groups
+      vendor: vendor
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: recipe
+field_type: entity_reference

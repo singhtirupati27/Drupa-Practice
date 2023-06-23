@@ -1,0 +1,22 @@
+uuid: 04f262d0-200d-467d-9b6e-ecfc1406cc72
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.recipe
+id: node.recipe.promote
+field_name: promote
+entity_type: node
+bundle: recipe
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

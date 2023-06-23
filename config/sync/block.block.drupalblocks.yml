@@ -1,0 +1,30 @@
+uuid: 90f5c0d3-a769-4c23-98a5-120b129dee10
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:page_block:1f8af1df-f14b-4ad8-bb2b-60b53871f995'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap5
+id: drupalblocks
+theme: bootstrap5
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:1f8af1df-f14b-4ad8-bb2b-60b53871f995'
+settings:
+  id: 'block_content:1f8af1df-f14b-4ad8-bb2b-60b53871f995'
+  label: 'Drupal | Blocks'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/contact-us\r\n/admin/*"

@@ -1,0 +1,12 @@
+uuid: 7bd20cbc-702f-41aa-85f7-176c43e48b13
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact Us'
+recipients:
+  - tirupatisingh1027@gmail.com
+reply: ''
+weight: 0
+message: 'Thank you contacting us.'
+redirect: ''

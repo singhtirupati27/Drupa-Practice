@@ -1,0 +1,33 @@
+uuid: a0758e22-7290-44ce-99b1-ca349635e65d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4c43f488-773e-4c4f-a65a-f0e917a3bd5c'
+  module:
+    - block_content
+    - user
+  theme:
+    - bootstrap5
+id: administratorblock
+theme: bootstrap5
+region: header
+weight: -12
+provider: null
+plugin: 'block_content:4c43f488-773e-4c4f-a65a-f0e917a3bd5c'
+settings:
+  id: 'block_content:4c43f488-773e-4c4f-a65a-f0e917a3bd5c'
+  label: 'Administrator Block'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator

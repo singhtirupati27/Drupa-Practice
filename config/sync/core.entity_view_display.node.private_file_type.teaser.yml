@@ -1,0 +1,23 @@
+uuid: db8c4aca-8d02-4221-92f0-688b3c72bdb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.private_file_type.field_file_upload
+    - node.type.private_file_type
+  module:
+    - user
+id: node.private_file_type.teaser
+targetEntityType: node
+bundle: private_file_type
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_file_upload: true
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: 367f8f2e-3a00-4831-9cab-dd6c421d5c2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.registartion_data
+id: node.registartion_data
+target_entity_type_id: node
+target_bundle: registartion_data
+default_langcode: site_default
+language_alterable: false

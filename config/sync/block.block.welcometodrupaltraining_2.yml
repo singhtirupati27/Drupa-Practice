@@ -1,0 +1,30 @@
+uuid: 662ffbb5-5a41-4b31-9b6c-418f96235795
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ae607a78-4c42-4f4d-8c17-6d8d7e0219ff'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap5
+id: welcometodrupaltraining_2
+theme: bootstrap5
+region: sidebar_second
+weight: -11
+provider: null
+plugin: 'block_content:ae607a78-4c42-4f4d-8c17-6d8d7e0219ff'
+settings:
+  id: 'block_content:ae607a78-4c42-4f4d-8c17-6d8d7e0219ff'
+  label: 'Welcome to Drupal Training'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/admin/*'

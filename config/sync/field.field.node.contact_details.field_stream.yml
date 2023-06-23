@@ -1,0 +1,21 @@
+uuid: d5cef1d9-1292-4e21-8c90-aa433804ee2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stream
+    - node.type.contact_details
+  module:
+    - text
+id: node.contact_details.field_stream
+field_name: field_stream
+entity_type: node
+bundle: contact_details
+label: Stream
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

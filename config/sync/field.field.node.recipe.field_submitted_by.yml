@@ -1,0 +1,29 @@
+uuid: b3ac7360-e6ac-457d-8a4b-6e8d990a8556
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_submitted_by
+    - node.type.recipe
+    - node.type.vendor
+id: node.recipe.field_submitted_by
+field_name: field_submitted_by
+entity_type: node
+bundle: recipe
+label: 'Submitted By'
+description: 'Choose the vendor that submitted this recipe.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      vendor: vendor
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

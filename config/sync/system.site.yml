@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: dc879178-aec7-4052-a059-90c921885764
+name: 'Drupal Training'
+mail: tirupati.singh@innoraft.com
+slogan: 'The best place to understand Drupal concepts.'
+page:
+  403: /node/5
+  404: /node/6
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: photography.magnus22@gmail.com

@@ -1,0 +1,18 @@
+uuid: 94f2bca2-cf43-48e2-84bc-94f92ec1dae2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.animal
+id: node.animal.title
+field_name: title
+entity_type: node
+bundle: animal
+label: 'Animal Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

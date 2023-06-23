@@ -1,0 +1,29 @@
+uuid: 709c7cef-d0e2-4a52-af19-9694ca0bd0c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.people.field_email
+    - field.field.node.people.field_favourite_animal
+    - field.field.node.people.field_people_picture
+    - field.field.node.people.field_phone
+    - node.type.people
+  module:
+    - user
+id: node.people.teaser
+targetEntityType: node
+bundle: people
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_email: true
+  field_favourite_animal: true
+  field_people_picture: true
+  field_phone: true
+  langcode: true
