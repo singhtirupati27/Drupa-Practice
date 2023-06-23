@@ -1,0 +1,10 @@
+uuid: 4c206735-07f6-4e0b-a110-5f9904118a33
+langcode: en
+status: true
+dependencies: {  }
+id: long_text
+label: 'Long text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

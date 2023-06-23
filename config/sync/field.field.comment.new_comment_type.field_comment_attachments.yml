@@ -1,0 +1,23 @@
+uuid: a6d20c4d-f7c6-4ff2-a327-f0e5f12e5cc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.new_comment_type
+    - field.storage.comment.field_comment_attachments
+  module:
+    - link
+id: comment.new_comment_type.field_comment_attachments
+field_name: field_comment_attachments
+entity_type: comment
+bundle: new_comment_type
+label: 'Comment attachments'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

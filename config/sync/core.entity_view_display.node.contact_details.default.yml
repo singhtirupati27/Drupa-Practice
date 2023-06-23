@@ -1,0 +1,38 @@
+uuid: f5e91868-ea02-4ae1-8f35-ee1a01c33bd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_details.field_branch
+    - field.field.node.contact_details.field_stream
+    - node.type.contact_details
+  module:
+    - options
+    - text
+    - user
+id: node.contact_details.default
+targetEntityType: node
+bundle: contact_details
+mode: default
+content:
+  field_branch:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_stream:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

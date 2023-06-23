@@ -1,0 +1,7 @@
+uuid: 1568c61d-3597-40aa-a70f-40bbd0d9d545
+langcode: en
+status: false
+dependencies: {  }
+formId: node_personal_information_form
+captchaType: default
+label: node_personal_information_form

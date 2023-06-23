@@ -1,0 +1,15 @@
+uuid: b1732cd1-74c5-4c74-b784-178e0395ab16
+langcode: en
+status: true
+dependencies: {  }
+id: nav
+label: Nav
+code: |-
+  .nav-item {
+  	display: inline-block;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

@@ -1,0 +1,37 @@
+uuid: 438d7f79-bc7d-4808-a057-a43e371dbacb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_content_box
+    - node.type.test_content
+    - paragraphs.paragraphs_type.paragraph_with_content
+  module:
+    - entity_reference_revisions
+id: node.test_content.field_paragraph_content_box
+field_name: field_paragraph_content_box
+entity_type: node
+bundle: test_content
+label: 'Paragraph content box'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      paragraph_with_content: paragraph_with_content
+    negate: 0
+    target_bundles_drag_drop:
+      content_paragraph_image:
+        weight: 5
+        enabled: false
+      long_text:
+        weight: 6
+        enabled: false
+      paragraph_with_content:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

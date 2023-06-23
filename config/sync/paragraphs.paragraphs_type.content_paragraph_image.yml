@@ -1,0 +1,10 @@
+uuid: 379c3af4-fee5-4381-a792-b2df959e343d
+langcode: en
+status: true
+dependencies: {  }
+id: content_paragraph_image
+label: 'Content Paragraph Image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

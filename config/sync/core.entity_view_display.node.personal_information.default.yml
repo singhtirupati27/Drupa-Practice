@@ -1,0 +1,46 @@
+uuid: f674efde-b830-46d6-9d85-9c2ca3d793b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.personal_information.field_contact
+    - field.field.node.personal_information.field_education_details
+    - field.field.node.personal_information.field_gender
+    - node.type.personal_information
+  module:
+    - options
+    - user
+id: node.personal_information.default
+targetEntityType: node
+bundle: personal_information
+mode: default
+content:
+  field_contact:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_education_details:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_gender:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

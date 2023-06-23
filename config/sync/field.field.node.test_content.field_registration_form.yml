@@ -1,0 +1,33 @@
+uuid: ff493929-369b-4dc1-a1ef-b28cf2f3f7ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_registration_form
+    - node.type.test_content
+    - webform.webform.registration
+  module:
+    - webform
+id: node.test_content.field_registration_form
+field_name: field_registration_form
+entity_type: node
+bundle: test_content
+label: 'Registration Form'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 0106a479-7595-4b6f-97ea-f37e2389bcf8
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    webform_access_group: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

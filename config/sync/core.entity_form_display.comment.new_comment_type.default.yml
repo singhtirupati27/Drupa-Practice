@@ -1,0 +1,48 @@
+uuid: 221cdb7e-85b6-4a0f-8df2-56962e2a53c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.new_comment_type
+    - field.field.comment.new_comment_type.comment_body
+    - field.field.comment.new_comment_type.field_comment_attachments
+    - field.field.comment.new_comment_type.field_comment_image
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+    - text
+id: comment.new_comment_type.default
+targetEntityType: comment
+bundle: new_comment_type
+mode: default
+content:
+  comment_body:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+  field_comment_attachments:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_comment_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  author: true
+  langcode: true
+  subject: true
+  translation: true

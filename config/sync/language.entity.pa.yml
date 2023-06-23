@@ -1,0 +1,9 @@
+uuid: 4655f769-fc40-4888-8c36-d0ac6299657f
+langcode: en
+status: true
+dependencies: {  }
+id: pa
+label: Punjabi
+direction: ltr
+weight: 4
+locked: false

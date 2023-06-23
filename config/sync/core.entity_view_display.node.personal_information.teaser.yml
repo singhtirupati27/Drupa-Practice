@@ -1,0 +1,27 @@
+uuid: 888d183c-7f3d-4bf9-ad35-9a2af189b715
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.personal_information.field_contact
+    - field.field.node.personal_information.field_education_details
+    - field.field.node.personal_information.field_gender
+    - node.type.personal_information
+  module:
+    - user
+id: node.personal_information.teaser
+targetEntityType: node
+bundle: personal_information
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_contact: true
+  field_education_details: true
+  field_gender: true
+  langcode: true

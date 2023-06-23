@@ -1,0 +1,29 @@
+uuid: 7272608a-3b55-4c44-8fbe-31abcad8f0d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.animal.field_animal_description
+    - field.field.node.animal.field_animal_picture
+    - field.field.node.animal.field_animal_type
+    - field.field.node.animal.field_category
+    - node.type.animal
+  module:
+    - user
+id: node.animal.teaser
+targetEntityType: node
+bundle: animal
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_animal_description: true
+  field_animal_picture: true
+  field_animal_type: true
+  field_category: true
+  langcode: true

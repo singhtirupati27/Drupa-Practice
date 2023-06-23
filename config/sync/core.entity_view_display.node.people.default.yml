@@ -1,0 +1,58 @@
+uuid: c5a34f67-9d68-4c01-8c19-292127e24d60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.people.field_email
+    - field.field.node.people.field_favourite_animal
+    - field.field.node.people.field_people_picture
+    - field.field.node.people.field_phone
+    - node.type.people
+  module:
+    - image
+    - user
+id: node.people.default
+targetEntityType: node
+bundle: people
+mode: default
+content:
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_favourite_animal:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_people_picture:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_phone:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

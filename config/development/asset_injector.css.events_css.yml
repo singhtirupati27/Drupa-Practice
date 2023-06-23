@@ -1,0 +1,25 @@
+uuid: 3169a96f-f89d-4930-94c7-0061a73a01ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: events_css
+label: 'Events css'
+code: |-
+  h1 {
+  	color: red;
+  }
+
+  span {
+  	color: orange;
+  }
+media: all
+preprocess: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/event/*\r\n/event"
+contexts: {  }
+conditions_require_all: true

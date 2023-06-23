@@ -1,0 +1,72 @@
+uuid: 534916e9-69ee-4102-adb5-26081638cda7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.test_content.body
+    - field.field.node.test_content.field_description
+    - field.field.node.test_content.field_paragraph_content_box
+    - field.field.node.test_content.field_registration_form
+    - field.field.node.test_content.field_test_comment
+    - node.type.test_content
+  module:
+    - comment
+    - entity_reference_revisions
+    - text
+    - user
+    - webform
+id: node.test_content.default
+targetEntityType: node
+bundle: test_content
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_description:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_paragraph_content_box:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_registration_form:
+    type: webform_entity_reference_entity_view
+    label: above
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_test_comment:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

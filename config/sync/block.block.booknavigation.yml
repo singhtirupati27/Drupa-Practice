@@ -1,0 +1,26 @@
+uuid: 049347da-704d-41a2-ab02-f2a38d030a21
+langcode: en
+status: true
+dependencies:
+  module:
+    - book
+    - system
+  theme:
+    - bootstrap5
+id: booknavigation
+theme: bootstrap5
+region: sidebar_second
+weight: -7
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: 'Book navigation'
+  label_display: visible
+  provider: book
+  block_mode: 'all pages'
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/admin/*'

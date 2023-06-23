@@ -1,0 +1,30 @@
+uuid: 09022693-6958-4266-b8c9-7009a42762ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.private_file_type.field_file_upload
+    - node.type.private_file_type
+  module:
+    - file
+    - user
+id: node.private_file_type.default
+targetEntityType: node
+bundle: private_file_type
+mode: default
+content:
+  field_file_upload:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

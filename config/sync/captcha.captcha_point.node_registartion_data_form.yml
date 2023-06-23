@@ -1,0 +1,7 @@
+uuid: 7f1ec867-bede-4b16-9ce8-964c2873837a
+langcode: en
+status: false
+dependencies: {  }
+formId: node_registartion_data_form
+captchaType: default
+label: node_registartion_data_form

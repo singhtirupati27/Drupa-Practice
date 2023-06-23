@@ -1,0 +1,30 @@
+uuid: 1b7fefea-070e-41e8-95e2-b0e31eab3c8b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:my_custom_block_type:2d0bda73-88ae-440a-968d-915b5741157f'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap5
+id: blockforspecificnode.
+theme: bootstrap5
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'block_content:2d0bda73-88ae-440a-968d-915b5741157f'
+settings:
+  id: 'block_content:2d0bda73-88ae-440a-968d-915b5741157f'
+  label: 'Block for specific node.'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/59

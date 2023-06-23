@@ -1,0 +1,44 @@
+uuid: 10f7269f-5fed-4112-8f97-f189b926e8b7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8c39c858-f5ed-4a4e-9a3e-05c864901a3e'
+  module:
+    - block_content
+    - node
+    - system
+  theme:
+    - bootstrap5
+id: blockforpage
+theme: bootstrap5
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'block_content:8c39c858-f5ed-4a4e-9a3e-05c864901a3e'
+settings:
+  id: 'block_content:8c39c858-f5ed-4a4e-9a3e-05c864901a3e'
+  label: 'Block for page[current-user:account-name]'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/admin/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      book: book
+      events: events
+      forum: forum
+      page: page
+      recipe: recipe
+      user_groups: user_groups
+      vendor: vendor
